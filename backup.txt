@@ -1,0 +1,40 @@
+ScreenWidth x ScreenHeight = 1920 x 1080
+
+tablePosition = {}
+
+tablePosition[1] = { ScreenWidth/2, ScreenHeight * 3/4 }
+tablePosition[2] = { ScreenWidth * 2/8, ScreenHeight * 3/4 }
+tablePosition[3] = { ScreenWidth * 1/8, ScreenHeight/2 }
+
+tablePosition[4] = { ScreenWidth * 2/8, ScreenHeight * 1/4 }
+tablePosition[5] = { ScreenWidth/2, ScreenHeight * 1/4 }
+tablePosition[6] = { ScreenWidth * 6/8, ScreenHeight * 1/4 }
+
+tablePosition[7] = { ScreenWidth * 7/8, ScreenHeight/2 }
+tablePosition[8] = { ScreenWidth * 6/8, ScreenHeight * 3/4 }
+
+playerSeats = {}
+playerSeats[2] = {1,5}
+playerSeats[3] = {1,4,6}
+playerSeats[4] = {1,3,5,7}
+playerSeats[5] = {1,3,4,6,7}
+playerSeats[6] = {1,3,4,5,6,7}
+playerSeats[7] = {8,2,3,4,5,6,7}
+playerSeats[8] = {1,2,3,4,5,6,7,8}
+
+seats = {} -- local seats
+local playerNo, myPlayer ....
+
+int pos = 1
+for i = myPlayer, playerNo do
+seats[pos] = playerSeats[i]
+pos = pos + 1
+end
+for i = 1, playerNo-1 do
+seats[pos] = playerSeats[i]
+pos = pos + 1
+end
+
+cardSpacing = 8
+mycardsY = ScreenHeight*4/5
+mycardsX = ScreenWidth/2-cardWidth-cardSpacing/2

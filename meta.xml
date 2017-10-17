@@ -1,0 +1,13 @@
+<meta>
+<info version="1.0.0" name="Poker Script" type="script" author="Spelso"/>
+<min_mta_version client="1.5" server="1.5" />
+<script type="server" src="poker.lua"/>
+<script type="client" src="cpoker.lua"/>
+<script type="server" src="tables.lua"/>
+<file src="pricedown.ttf" />
+<file src="pcards.png" />
+<file src="img.jpg" />
+<file src="sblind.png" />
+<file src="bblind.png" />
+<file src="back.png" />
+</meta>
